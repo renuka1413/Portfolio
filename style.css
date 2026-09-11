@@ -133,8 +133,12 @@ section {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(10, 31, 68, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(10, 31, 68, 0.98);
+    /* NOTE: intentionally NO backdrop-filter here. backdrop-filter turns the
+       navbar into the containing block for position:fixed descendants, which
+       collapses the mobile drawer (.nav-links, fixed top:0/bottom:0) to the
+       navbar's 68px height — clipping away all its links. The background is
+       ~opaque anyway, so the blur loss is invisible. */
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
     transition: var(--transition);
 }
