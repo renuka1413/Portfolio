@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renuka S | CSBS Student & Web Developer</title>
+  <meta name="description" content="Portfolio of Renuka S — CSBS Student and Web Developer from Salem, Tamil Nadu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Renuka <span>S</span></a>
+      <ul class="nav-links" id="navLinks">
+        <button class="nav-close" id="navClose" aria-label="Close menu">
+          <i class="fas fa-xmark"></i>
+        </button>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay (click to close) -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hello">Hello, I'm</p>
+        <h1>Renuka <span>S</span></h1>
+        <p class="role">CSBS Student | Web Developer</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i>Salem, Tamil Nadu, India</p>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/renuka-s-52690540a" target="_blank" rel="noopener" aria-label="LinkedIn"
+            title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/renuka1413" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="https://leetcode.com/u/renuka1413/" target="_blank" rel="noopener" aria-label="LeetCode"
+            title="LeetCode"><i class="fas fa-code"></i></a>
+          <a href="mailto:renukasivasubramaniyam@gmail.com" aria-label="Email" title="Email"><i
+              class="fas fa-envelope"></i></a>
+        </div>
+        <a href="Renuka_S_Resume.pdf" download="Renuka_S_Resume.pdf" class="btn btn-teal">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="images/renukaphoto.jpeg" alt="Renuka S" />
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+  </header>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container">
+      <span class="section-tag reveal">Who I Am</span>
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-card reveal">
+        <p>
+          I am a <strong>second-year Computer Science and Business Systems (CSBS)</strong> student at
+          Knowledge Institute of Technology, Salem. I am passionate about
+          <strong>building real-world solutions</strong> that solve everyday problems — from ticket
+          booking platforms to smart waste management systems.
+        </p>
+        <p>
+          I'm a <strong>quick learner</strong> and <strong>highly adaptable</strong>, always eager to
+          explore new technologies, take on challenges, and grow as a developer through practical
+          projects and hands-on training.
+        </p>
+        <div class="about-traits">
+          <span class="trait-chip"><i class="fas fa-bolt"></i> Quick Learner</span>
+          <span class="trait-chip"><i class="fas fa-rotate"></i> Adaptable</span>
+          <span class="trait-chip"><i class="fas fa-lightbulb"></i> Problem Solver</span>
+          <span class="trait-chip"><i class="fas fa-code"></i> Web Enthusiast</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <span class="section-tag reveal">What I Know</span>
+      <h2 class="section-title reveal">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><i class="fas fa-code"></i>
+          <h4>C++</h4>
+        </div>
+        <div class="skill-card reveal"><i class="fab fa-python"></i>
+          <h4>Python</h4>
+        </div>
+        <div class="skill-card reveal"><i class="fab fa-java"></i>
+          <h4>Java</h4>
+        </div>
+        <div class="skill-card reveal"><i class="fab fa-html5"></i>
+          <h4>HTML</h4>
+        </div>
+        <div class="skill-card reveal"><i class="fab fa-css3-alt"></i>
+          <h4>CSS</h4>
+        </div>
+        <div class="skill-card reveal"><i class="fab fa-js"></i>
+          <h4>JavaScript</h4>
+        </div>
+        <div class="skill-card reveal"><i class="fas fa-laptop-code"></i>
+          <h4>VS Code</h4>
+        </div>
+        <div class="skill-card reveal"><i class="fas fa-palette"></i>
+          <h4>Canva</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="education" id="education">
+    <div class="container">
+      <span class="section-tag reveal">My Journey</span>
+      <h2 class="section-title reveal">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <span class="year">2025 – 2029</span>
+            <h3>B.Tech — Computer Science & Business Systems (CSBS)</h3>
+            <p class="institute">Knowledge Institute Of Technology</p>
+            <p class="score">CGPA: <strong>8.032</strong> (up to 2<sup>nd</sup> semester)</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <span class="year">2024 – 2025</span>
+            <h3>Higher Secondary Education (12th STD)</h3>
+            <p class="institute">M.N.S Government Girls Higher Secondary School</p>
+            <p class="score">Percentage: <strong>83%</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <span class="year">2022 – 2023</span>
+            <h3>Secondary Education (10th STD)</h3>
+            <p class="institute">M.N.S Government Girls Higher Secondary School</p>
+            <p class="score">Percentage: <strong>88.2%</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <span class="section-tag reveal">My Work</span>
+      <h2 class="section-title reveal">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-icon"><i class="fas fa-ticket"></i></div>
+          <div class="project-body">
+            <h3>Ticket Booking Site</h3>
+            <p>
+              A ticket booking web application that enables users to browse and book tickets through
+              a simple, responsive interface. Features include ticket search, seat selection, and
+              booking confirmation for an improved booking experience.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon"><i class="fas fa-recycle"></i></div>
+          <div class="project-body">
+            <h3>Smart Waste Reporting System</h3>
+            <p>
+              A digital platform that replaces manual complaint reporting for efficient waste
+              management. Integrates frontend and backend for real-time complaint submission, status
+              tracking, and administrator monitoring.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERNSHIP & CERTIFICATIONS ============ -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <span class="section-tag reveal">Growth</span>
+      <h2 class="section-title reveal">Internship & Certifications</h2>
+      <div class="exp-grid">
+        <div class="exp-card reveal">
+          <div class="exp-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>Internship — STACK QUEUE</h3>
+          <p class="org">Training on C++</p>
+          <p>
+            Hands-on training in C++ programming covering data structures such as stacks and queues,
+            strengthening problem-solving and core programming fundamentals.
+          </p>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-icon"><i class="fas fa-globe"></i></div>
+          <h3>Internship — STACK QUEUE</h3>
+          <p class="org">Training on Web Development</p>
+          <p>
+            Practical web development training covering HTML, CSS, and JavaScript — building
+            responsive, user-friendly web interfaces from the ground up.
+          </p>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Certification</h3>
+          <p class="org">Power BI Micro Course</p>
+          <p>
+            Completed a micro course in Power BI, gaining skills in data visualization, dashboard
+            creation, and turning raw data into meaningful business insights.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <span class="section-tag reveal">Get In Touch</span>
+      <h2 class="section-title reveal">Contact Me</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <h3>Let's work together</h3>
+          <p>Have a question or an opportunity? Feel free to reach out — I'd love to hear from you!</p>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="c-label">Email</p>
+              <a class="c-value" href="mailto:renukasivasubramaniyam@gmail.com">renukasivasubramaniyam@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="c-label">Phone</p>
+              <a class="c-value" href="tel:+919042447925">+91 90424 47925</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <p class="c-label">Location</p>
+              <p class="c-value">Salem, Tamil Nadu, India</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mrpgjove"
+          method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-teal"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/renuka-s-52690540a" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/renuka1413" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/u/renuka1413/" target="_blank" rel="noopener" aria-label="LeetCode"><i
+            class="fas fa-code"></i></a>
+        <a href="mailto:renukasivasubramaniyam@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>© <span id="year"></span> <span>Renuka S</span> — Designed & Built with ❤️</p>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
