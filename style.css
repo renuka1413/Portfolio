@@ -1262,6 +1262,10 @@ footer p span {
     }
 
     /* ===== Overlay behind drawer ===== */
+    /* IMPORTANT: must stay BELOW the navbar's z-index (1000).
+       The drawer lives inside .navbar's stacking context, so an overlay
+       z-index above 1000 would cover the drawer AND the hamburger button,
+       blocking all clicks (this was the original mobile-menu bug). */
     .nav-overlay {
         position: fixed;
         inset: 0;
@@ -1270,7 +1274,7 @@ footer p span {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease, visibility 0.3s ease;
-        z-index: 1100;
+        z-index: 999;
     }
 
     .nav-overlay.show {

@@ -33,7 +33,23 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.overflow = "";
     };
 
-    navToggle.addEventListener("click", openMenu);
+    // Hamburger acts as a TOGGLE: opens when closed, closes when open.
+    // (The button sits above the overlay, so it stays clickable while the menu is open.)
+    navToggle.addEventListener("click", () => {
+        if (navLinks.classList.contains("open")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    // Auto-close the drawer if the viewport grows past the mobile breakpoint
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768 && navLinks.classList.contains("open")) {
+            closeMenu();
+        }
+    });
+
     if (navClose) navClose.addEventListener("click", closeMenu);
     if (navOverlay) navOverlay.addEventListener("click", closeMenu);
 
